@@ -15,3 +15,5 @@ app.listen(port,()=>{
     console.log( `Listo tu puerto http://localhost:${port} `)
 })
 
+dbConnect()
+
