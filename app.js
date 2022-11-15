@@ -11,6 +11,11 @@ app.use(cors());
 
 const port = process.env.PORT || 3000;
 
+/* aqui invocamos nuestras rutas*/
+
+// TODO localhost/api/_________________ = ejemplo (localhost/api/tracks)-> esta no es dinamica
+app.use("/api", require("./routes6"))
+
 app.listen(port,()=>{
     console.log( ` http://localhost:${port} `)
 })
