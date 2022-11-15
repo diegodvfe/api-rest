@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema (
             type:String
         },
         role: {
-            type: ["users", "admin"],
+            type: ["user", "admin"],
             default: "user",
         },
     },
