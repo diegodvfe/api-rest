@@ -5,13 +5,14 @@ const fs = require('fs')
 
 // Estas son los path que vamos estar viendo de manera dinamica
 
-const PATH_ROUTES = __dirname;
+const PATH_ROUTES = __dirname;// este es donde se encuentra la direccion de cada cosa para poder en rutar
 
 const removeExtension = (fileName) => {
     //TODO tracks.js []
     return fileName.split(".").shift()
 }
 
+// Este es un array que te devuelve varias
 fs.readdirSync(PATH_ROUTES).filter((file) =>{
     const name = removeExtension(file)//TODO useres, storage, tracks
 
