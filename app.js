@@ -23,3 +23,6 @@ app.listen(port,()=>{
 })
 
 dbConnect()
+
+// Pasar un paquete de npm i multer 
+// Este es para subir musica en el programa
